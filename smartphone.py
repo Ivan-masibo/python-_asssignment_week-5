@@ -45,3 +45,34 @@ print()  # space
 phone2.info()
 phone2.take_photo()
 phone2.call("0700932014")
+
+ 
+ 
+# Activity 2: Polymorphism Challenge of a Vehicles
+
+class Vehicle:
+    def move(self):
+        print("This vehicle moves in some way.")
+
+class Car(Vehicle):
+    def move(self):
+        print("The car is driving 🚗")
+
+class Plane(Vehicle):
+    def move(self):
+        print("The plane is flying ✈️")
+
+class Boat(Vehicle):
+    def move(self):
+        print("The boat is sailing 🚤")
+
+# Create a list of vehicles
+vehicles = [Car(), Plane(), Boat()]
+
+# Demonstrate polymorphism
+for v in vehicles:
+    v.move()
+print()  # space
+# Output: The car is driving🚗
+#         The plane is flying✈️
+#         The boat is sailing🚤
